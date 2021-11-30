@@ -55,7 +55,7 @@ stopwords = []
 for word in open('cn_stopwords.txt', 'r'):#只读方式打开
     stopwords.append(word.strip())
 
-def is_in_sentence(sen2,mywords):#判断某关键词是否在关键词集中
+def is_in_sentence(sen2,mywords):#判断某关键词是否在评论中
     i = 0
     for myword in mywords:
         if myword in sen2:
